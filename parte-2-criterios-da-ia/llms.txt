@@ -1,0 +1,26 @@
+# Clínica Exemplo Saúde
+
+> Clínica médica de atenção primária em Belo Horizonte (MG), com consultas de clínica geral, check-up e acompanhamento de doenças crônicas. Atende adultos, presencialmente, de segunda a sexta das 8h às 18h e aos sábados das 8h às 12h.
+
+A Clínica Exemplo Saúde fica na Rua Exemplo, 100, sala 201, Belo Horizonte, MG, CEP 30100-000. A médica responsável técnica é a Dra. Ana Exemplo. O agendamento é feito pelo telefone +55 31 0000-0000 ou pela página de contato.
+
+## Serviços
+
+- [Consulta de clínica geral](https://example.com.br/servicos/clinica-geral/): como funciona a consulta, duração e o que levar
+- [Check-up anual](https://example.com.br/servicos/check-up/): roteiro de exames e para quem é indicado
+- [Acompanhamento de doenças crônicas](https://example.com.br/servicos/doencas-cronicas/): hipertensão, diabetes e retornos periódicos
+
+## Sobre a clínica
+
+- [Quem somos](https://example.com.br/sobre/): história, equipe e responsável técnica
+- [Convênios aceitos](https://example.com.br/convenios/): lista atualizada de convênios
+- [Contato e localização](https://example.com.br/contato/): endereço, mapa, telefone e horário
+
+## Perguntas frequentes
+
+- [Perguntas frequentes](https://example.com.br/perguntas-frequentes/): agendamento, convênios, preparo para exames e cancelamento
+
+## Optional
+
+- [Blog](https://example.com.br/blog/): textos sobre prevenção e cuidados de saúde
+- [Política de privacidade](https://example.com.br/privacidade/): como a clínica trata dados pessoais

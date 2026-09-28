@@ -1,0 +1,55 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://example.com.br/#organization",
+      "name": "Clínica Exemplo Saúde",
+      "description": "Clínica médica de atenção primária em Belo Horizonte, com consultas de clínica geral, check-up e acompanhamento de doenças crônicas.",
+      "url": "https://example.com.br/",
+      "logo": "https://example.com.br/imagens/logo.png",
+      "email": "contato@example.com.br",
+      "telephone": "+553100000000",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Exemplo, 100, sala 201",
+        "addressLocality": "Belo Horizonte",
+        "addressRegion": "MG",
+        "postalCode": "30100-000",
+        "addressCountry": "BR"
+      },
+      "areaServed": [
+        {"@type": "City", "name": "Belo Horizonte"},
+        {"@type": "State", "name": "Minas Gerais"}
+      ],
+      "knowsAbout": ["Clínica geral", "Check-up", "Doenças crônicas"],
+      "sameAs": [
+        "https://www.google.com/maps?cid=SUBSTITUA_PELO_CID_DO_PERFIL",
+        "https://www.instagram.com/SUBSTITUA_PELO_PERFIL/"
+      ],
+      "founder": {"@id": "https://example.com.br/sobre/#person"}
+    },
+    {
+      "@type": "Person",
+      "@id": "https://example.com.br/sobre/#person",
+      "name": "Dra. Ana Exemplo",
+      "jobTitle": "Médica responsável técnica",
+      "description": "Médica de clínica geral e responsável técnica da Clínica Exemplo Saúde.",
+      "url": "https://example.com.br/sobre/",
+      "image": "https://example.com.br/imagens/ana-exemplo.jpg",
+      "worksFor": {"@id": "https://example.com.br/#organization"},
+      "knowsAbout": ["Clínica geral", "Atenção primária"],
+      "sameAs": [
+        "https://www.linkedin.com/in/SUBSTITUA_PELO_PERFIL/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://example.com.br/#website",
+      "url": "https://example.com.br/",
+      "name": "Clínica Exemplo Saúde",
+      "inLanguage": "pt-BR",
+      "publisher": {"@id": "https://example.com.br/#organization"}
+    }
+  ]
+}

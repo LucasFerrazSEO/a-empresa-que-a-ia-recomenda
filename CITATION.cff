@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "Se você usar estes materiais, cite o livro conforme abaixo. If you use these materials, please cite the book as below."
+title: "A Empresa que a IA Recomenda: materiais de apoio do autor"
+authors:
+  - family-names: Ferraz
+    given-names: Lucas
+    website: "https://lucasferraz.com"
+license: CC-BY-4.0
+url: "https://lucasferraz.com/livros/a-empresa-que-a-ia-recomenda/"
+repository-code: "https://github.com/LucasFerrazSEO/a-empresa-que-a-ia-recomenda"
+keywords:
+  - generative engine optimization
+  - GEO
+  - SEO
+  - inteligência artificial
+  - marketing digital
+preferred-citation:
+  type: book
+  title: "A Empresa que a IA Recomenda: o guia prático para captar clientes na era da inteligência artificial"
+  authors:
+    - family-names: Ferraz
+      given-names: Lucas
+      website: "https://lucasferraz.com"
+  isbn: "978-65-02-23078-7"
+  edition: "1"
+  publisher:
+    name: "Edição do autor"
+    city: "Belo Horizonte"
+  date-released: 2026-07-12
+  year: 2026
+  month: 7
+  pages: 114
+  medium: "E-book"
+  languages:
+    - pt
+  url: "https://lucasferraz.com/livros/a-empresa-que-a-ia-recomenda/"

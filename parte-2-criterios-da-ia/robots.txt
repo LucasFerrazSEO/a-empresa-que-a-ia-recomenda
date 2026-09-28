@@ -1,0 +1,107 @@
+# Modelo de robots.txt para prestador de serviço
+# Material de apoio do autor para os temas da Parte 2 do livro
+# "A Empresa que a IA Recomenda". Não é trecho do livro.
+#
+# Como usar: troque https://example.com.br pelo seu domínio, revise cada
+# bloco e publique o arquivo na raiz do site
+# (https://seudominio.com.br/robots.txt), salvo em UTF-8.
+#
+# Dois tipos de robô de IA:
+# - BUSCA: busca páginas para montar a resposta de um assistente ou
+#   buscador com IA no momento da pergunta. Bloquear tende a tirar o site
+#   das respostas desse assistente.
+# - TREINAMENTO: coleta conteúdo para treinar versões futuras de modelos.
+#   Bloquear não tira o site das respostas de busca, mas o conteúdo deixa
+#   de ser usado em treinamento por quem respeita o robots.txt.
+#
+# Cada empresa documenta os próprios robôs, e cada robô é independente:
+# é possível liberar a busca e bloquear o treinamento da mesma empresa.
+# Nomes conferidos na lista aberta do autor:
+# https://github.com/LucasFerrazSEO/ai-bots-list
+
+# ---------------------------------------------------------------------
+# 1. Buscadores tradicionais (também alimentam recursos de IA)
+# ---------------------------------------------------------------------
+# AI Overviews e AI Mode usam o índice da Pesquisa Google, alimentado
+# pelo Googlebot. Bloquear o Googlebot tira o site do Google inteiro.
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: Applebot
+User-agent: DuckAssistBot
+Allow: /
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+# ---------------------------------------------------------------------
+# 2. Robôs de IA de BUSCA (liberados neste modelo)
+# ---------------------------------------------------------------------
+# OpenAI: OAI-SearchBot (busca do ChatGPT) e ChatGPT-User (acesso feito
+# a pedido de um usuário). Anthropic: Claude-SearchBot e Claude-User.
+# Perplexity: PerplexityBot e Perplexity-User. Os robôs "-User" agem a
+# pedido de uma pessoa, e a documentação de algumas empresas informa que
+# eles podem não seguir o robots.txt.
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: GrokBot
+User-agent: Grok-DeepSearch
+User-agent: YouBot
+User-agent: BraveBot
+User-agent: ExaBot
+User-agent: LinerBot
+User-agent: LinkupBot
+Allow: /
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+# ---------------------------------------------------------------------
+# 3. Tokens de controle (não são robôs que visitam o site)
+# ---------------------------------------------------------------------
+# Google-Extended: controla se o conteúdo que o Google já coleta pode ser
+# usado para treinar modelos Gemini e para grounding no app Gemini e na
+# Vertex AI. Segundo o Google, não afeta a inclusão nem a posição na
+# Pesquisa Google.
+# Applebot-Extended: controla se o conteúdo pode treinar os modelos de IA
+# generativa da Apple. Segundo a Apple, não é considerado no ranking da
+# busca.
+# Liberados neste modelo. Para recusar, troque "Allow: /" por
+# "Disallow: /" neste bloco.
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+# ---------------------------------------------------------------------
+# 4. Robôs de TREINAMENTO (decisão do dono do site)
+# ---------------------------------------------------------------------
+# Liberar tende a colocar o conteúdo no treinamento de versões futuras de
+# modelos. Bloquear não afeta os robôs de busca dos blocos 1 e 2.
+# Neste modelo eles estão liberados. Para bloquear, troque "Allow: /"
+# por "Disallow: /" neste bloco.
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: CCBot
+User-agent: Amazonbot
+User-agent: Meta-ExternalAgent
+User-agent: cohere-ai
+User-agent: Bytespider
+User-agent: AI2Bot
+Allow: /
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+# ---------------------------------------------------------------------
+# 5. Demais robôs
+# ---------------------------------------------------------------------
+# Um robô que tem bloco próprio (blocos 1 a 4) segue só aquele bloco e
+# ignora este. Por isso a restrição de área administrativa se repete em
+# cada bloco. O exemplo é de um site em WordPress: ajuste ao seu site.
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+Sitemap: https://example.com.br/sitemap.xml
